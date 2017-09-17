@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!-- 
+<!--
     作者设计的几种语句结构
 -->
 
@@ -99,7 +99,7 @@
 <!-- 类似的还有最小值，很明显1小于9，所以返回第二个字符串“1最小” -->
 <min>
     <num>9</num>
-    <num>1</num>    
+    <num>1</num>
     <str>9最小</str>
     <str>1最小</str>
 </min>
@@ -143,23 +143,9 @@
         <num>120</num>
         <num>60</num>
         <num>30</num>
-        <num>0</num>        
+        <num>0</num>
             <str>超高的fps</str>
             <str>较高的fps</str>
             <str>一般的fps</str>
             <str>垃圾的fps</str>
 </operation>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
