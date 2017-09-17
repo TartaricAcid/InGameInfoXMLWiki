@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 
+    xml是一种很像html的标记语言;
+    所有xml元素都须有关闭标签;
+    xml标签对大小写敏感;
+    在xml中，文档中的空格不会被删节。
+-->
+
+<config>
+    <lines at="topleft">
+        <line>
+            <str>Hello World!</str>
+        </line>
+    </lines>
+    
+    <lines at="bottomleft">
+    <!-- 
+        topleft
+        topcenter
+        topright
+        middleleft
+        middlecenter
+        middleright
+        bottomleft
+        bottomcenter
+        bottomright 
+    -->
+        <line>$cGoodbye World!</line>
+    <!-- 
+        用$符号带上一位16进制数表示的颜色代码
+        颜色代码请查看 https://minecraft-zh.gamepedia.com/样式代码
+    -->
+    </lines>
+</config>
