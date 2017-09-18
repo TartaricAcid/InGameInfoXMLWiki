@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <lines at="topleft">
+        <line>
+            <str>$c$lInGameInfoXML教程</str>
+        </line>
+        <line>
+            <str>时间：{mctime24}</str>
+            <if>
+                <var>daytime</var>
+                <str>（白天）</str>
+                <str>（夜晚）</str>
+            </if>
+        </line>
+        <line>
+            <str>生物群系：{biome}</str>
+        </line>
+        <line>
+            <str>坐标：[{xi}，{yi}]</str>
+        </line>
+        <line>
+            <str>内存：</str>
+            <round>
+                <pct>
+                    <var>memused</var>
+                    <var>memtotal</var>
+                </pct>
+                <num>2</num>
+            </round>
+            <str>%</str>
+        </line>
+        <line>
+            <if>
+                <var>slimechunk</var>
+                <str>$c$l是史莱姆区块!</str>
+                <str></str>
+            </if>
+        </line>
+    </lines>
+    
+    <lines at="bottomleft">
+        <line>
+            <var>mainhandicon</var>
+            <str> </str>
+            <max>
+                <var>mainhanddamageleft</var>
+                <num>0.5</num>
+                <str>{mainhanddamageleft}$f / $e{mainhandmaxdamage}</str>
+                <var>mainhandname</var>
+            </max>
+        </line>
+        <line>
+            <str> </str>
+        </line>
+    </lines>
+    
+    <lines at="topright">
+        <line>
+            <operation>
+                <str>GE</str>
+                <var>fps</var>
+                    <num>120</num>
+                    <num>60</num>
+                    <num>30</num>
+                    <num>0</num>
+                        <str>FPS：$a{fps}</str>
+                        <str>FPS：$b{fps}</str>
+                        <str>FPS：$e{fps}</str>
+                        <str>FPS：$c{fps}</str>
+            </operation>
+        </line>
+    </lines>
+    
+    <lines at="middlecenter">
+        <line>
+            <if>
+                <var>ridinghorse</var>
+                <str>$c$l你在骑马！！！</str>
+                <str></str>
+            </if>
+        </line>
+    </lines>
+</config>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- 基本逻辑语句 -->
+
+<!-- ================================================================-->
+<!-- 逻辑判断，传入的参数必须都是布尔值 -->
+
+<!-- 非 案例返回true-->
+<not>
+    <val>false</val>
+</not>
+
+<!-- 与 案例返回true-->
+<or>
+    <val>true</val>
+    <val>false</val>
+    <val>false</val>
+</or>
+
+<!-- 和 案例返回false-->
+<and>
+    <val>true</val>
+    <val>false</val>
+    <val>false</val>
+</and>
+
+<!-- ================================================================-->
+<!-- 语句 -->
+
+<!-- 选择语句，传入的第一个参数必须是布尔值，之后的连个则可以随便选择 -->
+<if>
+    <var>daytime</var>
+    <!-- 判定条件 -->
+    <str>白天</str>
+    <!-- 如果为true则返回这个 -->
+    <str>晚上</str>
+    <!-- 如果为false则返回这个 -->
+</if>
+
+<!-- 多选择语句，类似于常见的switch语句 -->
+<operation>
+    <str>GE</str>
+    <!-- 判断符号，必须为str类型：GT(>), LT(<), GE(>=), LE(<=), EQ(==), NE(!=) -->
+    <var>fps</var>
+    <!-- 判断条件，任意类型数据均可，这里传入的是游戏的fps，它的返回类型为数字 -->
+        <num>120</num>
+        <num>60</num>
+        <num>30</num>
+        <num>0</num>
+            <str>超高的fps</str>
+            <str>较高的fps</str>
+            <str>一般的fps</str>
+            <str>垃圾的fps</str>
+</operation>
